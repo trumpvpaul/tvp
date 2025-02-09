@@ -71,7 +71,10 @@
    display: flex;
    gap: 20px;
    z-index: 100;
-   flex-wrap: wrap; /* Allow wrapping on small screens */
+   white-space: nowrap; /* Prevents links from breaking into multiple lines */
+   overflow-x: auto; /* Allows horizontal scrolling if necessary */
+   max-width: 90vw; /* Keeps it within the screen width */
+   padding: 5px; /* Adds some spacing */
    max-width: 90%; /* Prevent overflow */
    justify-content: center; /* Center items properly */
 }
